@@ -1,0 +1,259 @@
+/*
+ * Table of Contents:
+ * 	   - Media Queries
+ *   0 - media screen and (max-width: 1170px)
+ *   1 - media screen and (max-width: 1152px) 
+ *   2 - media screen and (max-width: 1024px)
+ *   3 - media screen and (max-width: 992px)
+ *   4 - media screen and (max-width: 800px)
+ *   5 - media screen and (max-width: 768px)
+ *   6 - media screen and (max-width: 728px)
+ *   7 - media screen and (max-width: 640px)
+ *   8 - media screen and (max-width: 500px)
+ *   9 - media screen and (max-width: 480px)
+ *  10 - media screen and (max-width: 414px)
+ *  11 - media screen and (max-width: 375px)
+ * 	12 - media screen and (max-width: 360px)
+ *  13 - media screen and (max-width: 320px)
+---------------------------------------------------------------------- */
+
+/* 1.0 - Common Styles
+---------------------------------------------------------------------- */
+
+/*body, h1, h2, h3, h4, h5, h6, a, p, article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+	font-family: "Open Sans";
+	color: #333;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	margin: 0px;
+	padding: 0px;
+}*/
+/*h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	color: #222;
+	margin-bottom: 15px;
+	font-weight: 700;
+	line-height: 36px;
+}
+h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	color: #222;
+	margin-bottom: 15px;
+	font-weight: 700;
+	line-height: 28px;
+}
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	line-height: 24px;
+	color: #333;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: #333;
+	font-weight: 600;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	line-height: 22px;
+}
+h5 {
+	font-family: "Open Sans";
+	font-size: 16px;
+	color: #333;
+	margin-bottom: 10px;
+	line-height: 22px;
+	font-weight: 600;
+}
+h6 {
+	font-family: "Open Sans";
+	font-size: 14px;
+	color: #333;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+a {
+	outline: 0;
+	color: #000;
+	-webkit-transition: all .25s ease-in;
+	-moz-transition: all .25s ease-in;
+	-ms-transition: all .25s ease-in;
+	-o-transition: all .25s ease-in;
+	transition: all .25s ease-in;
+}
+.btn {
+	font-size: 15px;
+	outline: 0;
+	-webkit-transition: all .25s ease-in;
+	-moz-transition: all .25s ease-in;
+	-ms-transition: all .25s ease-in;
+	-o-transition: all .25s ease-in;
+	transition: all .25s ease-in;
+	cursor: pointer;
+}
+p {
+	margin-bottom: 10px;
+}
+a:focus, a:hover {
+	text-decoration: none;
+	outline: 0 !important;
+	box-shadow: none !important;
+}
+button:focus {
+	text-decoration: none;
+	outline: 0 !important;
+	box-shadow: none !important;
+}
+.container {
+	padding: 0;
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+*/
+:root{
+    --white__back:#fff;
+    --red_text:#b20000;   
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.p-3 {
+    padding: 15px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.mb-5 {
+    margin-bottom: 40px !important;
+}
+
+.mb-3 {
+    margin-bottom: 20px !important;
+}
+
+.mt-5 {
+    margin-top: 65px !important;
+}
+
+.mt-4 {
+    margin-top: 30px !important;
+}
+
+.mt-3 {
+    margin-top: 20px !important;
+}
+
+.mt-1 {
+    margin-top: 10px !important;
+}
+
+.mt-0 {
+    margin-top: 0px !important;
+}
+
+.mb-0 {
+    margin-bottom: 0px !important;
+}
+.mb-15 {
+    margin-bottom: 15px !important;
+}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    padding: 12px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+#dropdownMenu1 .caret {
+    margin-left: 0;
+    float: right;
+    margin-top: 10px;
+}
+/* Top-bar
+---------------------------------------------------------------------- */
+.ccr_main {
+    display: inline-block;
+    width: 100%;
+    margin: 20px 0;
+    /*background: #eee;*/
+}
+
+.application__health {
+    background: #eee;
+    padding: 15px;
+}
+.resource {
+    padding: 0px;
+}
+
+.blueline_box { margin: 0px; padding: 0px;}
+.blueline_box .media_box {
+    border-left: 5px solid #00bcf2;
+    margin: 15px;
+    padding-left: 10px;
+    display: inline-block;
+	color: #222;
+	font-size: 12px;
+}
+.blueline_box .media_box:first-child {
+    margin-left: 0px;
+}
+.blueline_box .media_box:last-child {
+    margin-right: 0px;
+}
+
+.dark_purple {
+    border-color: #00188f;
+}
+
+.big__text {
+    font-weight: 700;
+    color: #222;
+}
+
+.big__text span {
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.big__text span:first-child {
+    font-size: 34px;
+    font-weight: 700;
+    color: #222;
+	padding: 0px;
+	line-height: 36px;
+}
+
+.white__back {
+    background-color: var(--white__back);
+}
+
+.red_text {
+    color: var(--red_text);
+}
+
+.dropdown-toggle::after {
+    float: right;
+    margin-top: 8px;
+}
+
+.panel-default > .panel-heading {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.traffic { font-weight: 700;}
+.traffic span { font-weight: normal;}
+
+.health_right { padding-right: 0px;}

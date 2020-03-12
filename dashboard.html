@@ -1,0 +1,1486 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sterling Holiday | Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css" id="style-resource-1">
+	<link rel="stylesheet" href="assets/css/font-icons/entypo/css/entypo.css" id="style-resource-2">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic" id="style-resource-3">
+	<link rel="stylesheet" href="assets/css/bootstrap.css" id="style-resource-4">
+	<link rel="stylesheet" href="assets/css/neon-core.css" id="style-resource-5">
+	<link rel="stylesheet" href="assets/css/neon-theme.css" id="style-resource-6">
+	<link rel="stylesheet" href="assets/css/neon-forms.css" id="style-resource-7">
+  <link rel="stylesheet" href="assets/css/custom.css" id="style-resource-8">
+  <link rel="stylesheet" href="assets/css/select.css"> 
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+   <script src="assets/js/jquery-1.11.3.min.js"></script>
+   <script src="assets/js/assest.js" type="text/javascript" charset="utf-8"></script>
+   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="assets/choosen/chosen.css">
+<script src="assets/choosen/chosen.jquery.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!--  
+<link rel="stylesheet" href="assets/choosen/chosen.min.css">
+<link rel="stylesheet" href="assets/choosen/docsupport/style.css">
+  <link rel="stylesheet" href="assets/choosen/docsupport/prism.css">
+  <link rel="stylesheet" href="assets/choosen/chosen.css"> -->
+
+
+</head>
+<body class="page-body">
+  
+    <div class="page-container">
+            
+          <div class="sidebar-menu">
+                <div class="sidebar-menu-inner">
+                    <header class="logo-env">
+                        <!-- logo -->
+                        <div class="logo">
+                                  <a href="/sterling/dashboard.html">
+                                <img src="assets/images/logo@2x.png" width="120" alt="" />
+                            </a>
+                        </div>	<div class="sidebar-collapse">
+                            <a href="#" class="sidebar-collapse-icon">                           
+                                <i class="entypo-menu"></i>
+                            </a>
+                        </div>               
+                        <div class="sidebar-mobile-menu visible-xs">
+                            <a href="#" class="with-animation">                     
+                                <i class="entypo-menu"></i>
+                            </a>
+                        </div>
+                    </header>
+
+                      <ul id="main-menu" class="main-menu">
+                          <li>					
+                                  <a href="dashboard.html" >						
+                                      <img src="icons/resort1.png" width="30px" alt="" />													
+                                      <span class="title">Resorts</span>							
+                                  </a>                      
+                          </li>
+                          <li>
+                                  <a href="#">
+                                        <img src="icons/hotelrr.png" width="30px" alt="" />
+                                      <span class="title">Products</span>
+                                  </a>                        
+                          </li>                 
+                      </ul>
+                </div>
+            </div>		
+<div class="main-content">
+		<div class="ccr__main_header">
+                <div class="row">                     
+                    <div class="col-md-12 col-sm-12 clearfix hidden-xs">
+                        <ul class="list-inline links-list pull-right">
+                            <li class="sep"></li>
+                            <li>
+                                <button type="button" class="btn btn-info btn-icon icon-left">
+                                    <a href="http://"><i class="entypo-folder"></i>  File Manager</a>
+                                   </button>                            
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-red btn-icon">
+                                    Log Out <i class="entypo-logout right"></i> </button>                     
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>          
+<div class="ccr__padding">
+    <div class="ccr_main">
+        <div class="row">
+            <div class="col-md-1" id="closediv" style="padding-left: 1px!important;padding-right: 1px!important;display: none;">
+                <b><font color="red"></font></b>		
+            </div>
+
+            <div class="col-md-2" id="closedivg" style="padding-left: 1px!important;padding-right: 1px!important;height: 900px;">
+              <div class="panel panel-primary" data-collapsed="0"  style="border-color: #000;"> 
+                <div class="panel-heading" style="border-bottom: 1px solid #913D88;background-color:#f0f0f1;"> 
+                      <div class="panel-options" >
+                              <img src="icons/left.png" width="15px"  alt="" onclick="resortclick()" data-rel="close"/>
+                      </div> 
+                </div>
+            
+                <div class="panel-body" style="background-color:#CF93D9;height: 900px;"> 
+                  <form role="form" class="form-horizontal">
+                    <div class="form-group"> 
+                        <input type="text" class="form-control" id="resortname" placeholder="Edit Resort Name..." name="resortname"> 
+                    </div> 
+                  </form> 
+                </div>
+
+              </div>
+            </div>	
+
+  <div class="col">
+		 <div class="panel-group" id="accordion-test"> 
+              <div class="panel panel-default">
+                 <div class="panel-heading"  style="background-color: #fff;"> 
+                    <div class="panel-title">
+                      <a data-toggle="collapse"  aria-expanded="false" class="collapsed"> </a>
+                      <div class="row">
+                          <div class="col-md-3 ">  
+                          <div class="btn btn-blue btn-icon icon-left">Resort Name Agra </div> 
+                        </div> 
+                        <div class="col-md-6"> </div>
+                        <div class="col-md-1">    
+                                      <button type="button" class="btn btn-blue btn-icon icon-left">
+                                                Edit
+                                      <i class="entypo-pencil"></i>
+                                      </button>   
+                        </div> 
+                        <div class="col-md-1"> 
+                                              <button type="button" class="btn btn-blue btn-icon icon-left">
+                                                Create
+                                                <i class="entypo-plus"></i> 
+                                              </button>     					 
+                                
+                        </div>
+                                
+                                </div> 
+                  </div >
+                </div> 
+          </div>	 
+        
+        
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><span><img src="icons/resort.png" width="30px" alt="" /></span>&nbsp;&nbsp;&nbsp;Resort Master <img class="pull-right pt-3 mr-5 icon-right-icon"src="icons/right.png"alt="" /></a>
+              </h4>
+             
+            </div>
+           
+            <div id="collapse2" class="panel-collapse collapse">
+             
+              <div class="panel-body" style="background-color: #f9f2f3;border-radius: 5px; margin-left:16px; margin-right:16px;margin-top: 1px;"> 
+                
+                 <div class="row">
+                         <div class="col-md-4">
+                          <label for="field-3" class="">Resort Name</label> 
+                          <input type="text" class="form-control" placeholder="Enter Resort Name"> 
+                         </div>
+
+                         <div class="col-md-4">
+                          <label for="field-3" class="">Email Id</label> 
+                          <input type="email" class="form-control" id="email" placeholder="Enter Email Id" name="email">
+                         </div>
+
+                         <div class="col-md-4">
+                           <div class="row">
+                             <div class="col-md-12">
+                              <label for="field-3" class="">Resort Active</label> 
+                             </div>
+                            </div>
+                            <div class="row pl-4">
+                              <div class="make-switch switch-small" data-on-label="<i class='entypo-check'></i>" data-off-label="<i class='entypo-block'></i>" data-on="success" data-off="danger">
+                                <input type="checkbox" class="done-checkbox form-control" data-id="1" checked="checked" data-val="true" data-val-required="The Is Enable field is required." id="item_Is_Enabled" name="item.Is_Enabled" value="true" />
+                             </div> 
+                            </div>   
+                         </div>
+                 </div>
+                 
+                 <div class="row">
+                         <div class="col-md-4">
+                            <label for="field-3" class="">Check In Time</label> 
+                          <input type="time" class="form-control" id="time" placeholder="time" name="time">       
+                         </div>
+
+                         <div class="col-md-4">
+                          <label for="field-3" class="">Check Out Time</label> 
+                          <input type="time" class="form-control" id="time" placeholder="time" name="time">                           
+                         </div>
+
+                         <div class="col-md-4">
+                          <label for="field-3" class="col-sm-6 control-label">Fax</label> 
+                          <input type="text" class="form-control" id="fax" placeholder="Enter Fax" name="fax">         
+                         </div>
+                 </div>
+
+                 <div class="row">
+                         <div class="col-md-4">
+                              <label for="field-3" class="">Mobile Number</label> 
+                              <input type="email" class="form-control" id="mobilenumber" placeholder="Enter Mobile number" name="mobilenumber">                                    
+                         </div>
+
+                         <div class="col-md-4">
+                              <label for="field-3" class="">Landline Number</label> 
+                              <input type="text" class="form-control" id="landlinenumber" placeholder="Enter Landline Number" name="landlinenumber">                                          
+                         </div>
+                         <div class="col-md-4">
+                          <label for="field-3" class="">Front Office Manager</label> 
+                          <input type="text" class="form-control" id="FrontOfficeManager" placeholder="Enter Front Office Manager" name="FrontOfficeManager">                                              
+                         </div>
+                        
+                 </div>
+
+                 <div class="row">
+                        <div class="col-md-4">
+                          <label for="field-3" class="">Latitute</label> 
+                          <input type="email" class="form-control" id="Latitute" placeholder="Enter Latitute" name="Latitute">                
+                        </div>
+
+                         <div class="col-md-4">
+                          <label for="field-3" class="">Longtitute</label> 
+                          <input type="text" class="form-control" id="Longtitute" placeholder="Enter Longtitute" name="Longtitute">                                          
+                         </div>
+                         <div class="col-md-4">
+                          <label for="field-3" class="">Serial Number (SF ID)</label> 
+                          <input type="text" class="form-control" id="serialnumber" placeholder="Enter Serial Number (SF ID)" name="serialnumber">                     
+                         </div>
+                 </div>
+
+                 <div class="row">
+                         <div class="col-md-4">
+                              <div class="form-group"> 
+                                <div class="col-sm-offset-0 ">
+                                            <div class="icheckbox_minimal" style="position: relative;">
+                                              <input tabindex="5" type="checkbox" class="icheck" id="minimal-checkbox-1" style="position: absolute; opacity: 0;">
+                                                  <ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px;
+                                                        padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+                                                  </ins>
+                                            </div> 
+                                            <div class="checkbox checkbox-replace checked">
+                                              <input type="checkbox" id="chk-1" checked>
+                                              <label>AAC Applicable</label>
+                                            </div><br/>
+                                            <div class="checkbox checkbox-replace checked">
+                                              <input type="checkbox" id="chk-2" checked>
+                                              <label>Leased Property</label>
+                                            </div><br/>
+                                </div>
+                              </div>                  
+                         </div>
+
+                         <div class="col-md-4">
+                                <div class="form-group"> 
+                                         <div class="col-sm-offset-0 "> 
+                                              <div class="checkbox checkbox-replace checked">
+                                                <input type="checkbox" id="chk-3" checked>
+                                                <label>Operational</label>
+                                              </div><br/>
+                                              <div class="checkbox checkbox-replace checked">
+                                                <input type="checkbox" id="chk-4" checked>
+                                                <label>RCI Affiliated</label>
+                                              </div><br/>
+                                         </div>
+                                 </div>                     
+                         </div>
+                 </div>
+
+                 <div class="row">
+                  <div class="col-md-4">
+                    <label for="field-3" class="">Total No. Of Rooms</label> 
+                    <input type="number" min="0"max="18" class="form-control" id="TotalNoOfRooms" placeholder="Enter Total No. Of Rooms" name="TotalNoOfRooms">
+                  </div>
+                  <div class="col-md-4">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <label for="field-3" class="">Utility Charges Payable at</label> 
+                        </div>
+                      </div>   
+                      <div class="row">
+                        <div class="col-md-12">       
+                          <select  multiple class="chosen-selects"style="width: 200px;">
+                            <option value=""></option>
+                            <option>Resort</option>
+                            <option>Booking</option>
+                          </select>
+                        </div>
+                      </div>  
+                  </div>
+                  <div class="col-md-4">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <label for="field-3" class="">Guest Fee Payable at</label> 
+                        </div>
+                      </div>   
+                      <div class="row">
+                        <div class="col-md-12">       
+                          <select  multiple class="chosen-selects"style="width: 200px;">
+                            <option value=""></option>
+                            <option>Resort</option>
+                            <option>Booking</option>
+                          </select>
+                        </div>
+                      </div>  
+                  </div>
+                </div>
+           <div class="row">     
+              <div class="col-md-4">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <label for="field-3" class="">Exchange Fee Payable At</label> 
+                    </div>
+                  </div>   
+                  <div class="row">
+                    <div class="col-md-12">       
+                      <select  multiple class="chosen-selects"style="width: 200px;">
+                        <option value=""></option>
+                        <option>Resort</option>
+                        <option>Booking</option>
+                      </select>
+                    </div>
+                  </div>  
+              </div>
+              <div class="col-md-4">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <label for="field-3" class="">Aceess Fee</label> 
+                    </div>
+                  </div>   
+                  <div class="row">
+                    <div class="col-md-12">       
+                      <select  multiple class="chosen-selects"style="width: 200px;">
+                        <option value=""></option>
+                        <option>Resort</option>
+                        <option>Booking</option>
+                        <option>NA Applicable</option>
+                      </select>
+                    </div>
+                  </div>  
+              </div>
+              <div class="col-md-4">           
+                <div class="row">
+                  <div class="col-md-12">
+                    <label for="field-3" class="">Guest Fee Payable at</label> 
+                  </div>
+                </div>   
+                <div class="row">
+                  <div class="col-md-12">       
+                    <select  multiple class="chosen-selects" style="width: 200px;">
+                      <option value=""></option>
+                      <option>Resort</option>
+                      <option>Booking</option>
+                    </select>
+                  </div>
+                </div> 
+              </div>
+           </div>
+         
+
+
+           <div class="row">
+           <div class="col-md-12">
+            <label for="field-3" class="">Title</label> 
+            <input type="text" class="form-control" id="title" placeholder="Enter Title" name="title">        
+          </div>
+           </div>
+
+
+                 <div class="row">
+                  <div class="col-md-12">
+                    <label for="field-3" class="">Information</label> 
+                    <textarea class="form-control autogrow" name="about" id="about" data-validate="minlength[10]" rows="5"
+                    placeholder="Enter Information" aria-invalid="false" 
+                    style="overflow: hidden; overflow-wrap: break-word; resize: horizontal; height: 99px; width: 100%;"></textarea>                                       
+                  </div>
+                 </div>
+
+                 <div class="row">
+                  <div class="col-md-12">
+                    <label for="field-3" class="">Overview</label> 
+                    <textarea class="form-control autogrow" name="about" id="about" data-validate="minlength[10]" rows="5"
+                    placeholder="Enter Overview" aria-invalid="false" 
+                    style="overflow: hidden; overflow-wrap: break-word; resize: horizontal; height: 99px;"></textarea>                                 
+                  </div>
+                 </div>
+
+                 <div class="row">
+                  <div class="col-md-12">
+                    <label for="field-3" class="">Description</label> 
+                    <textarea class="form-control autogrow" name="about" id="about" data-validate="minlength[10]" rows="5"
+                    placeholder="Enter Description" aria-invalid="false" 
+                    style="overflow: hidden; overflow-wrap: break-word; resize: horizontal; height: 99px;"></textarea>                                 
+                  </div>
+                 </div>
+
+                 <div class="row">
+                  <div class="col-md-12">
+                    <label for="field-3" class="">Dining Description</label> 
+                    <textarea class="form-control autogrow" name="about" id="about" data-validate="minlength[10]" rows="5"
+                    placeholder="Enter Dining Description" aria-invalid="false" 
+                    style="overflow: hidden; overflow-wrap: break-word; resize: horizontal; height: 99px;"></textarea>                                           
+                  </div>
+                 </div>
+
+              </div>
+            </div>
+          </div>
+        <!-- ---------------------------------------------------------------Address--------------------- -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><span><img src="icons/map.png" width="30px" alt="" /></span>&nbsp;&nbsp;&nbsp;Address<img class="pull-right pt-3 mr-5 icon-right-icon"src="icons/right.png"alt="" /></a>
+              </h4>
+             
+            </div>
+           
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body" style="background-color: #f9f2f3;border-radius: 5px; margin-left:16px; margin-right:16px;margin-top: 1px;"> 
+                
+                
+                <div class="row">
+                  <div class="col-md-12">
+                    <label for="field-3" class="">Address</label> 
+                    <textarea class="form-control autogrow" name="about" id="about" data-validate="minlength[10]" rows="5" placeholder="Type Address hear..." aria-invalid="false" style="overflow: hidden; overflow-wrap: break-word; resize: horizontal; height: 99px;"></textarea>   
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="field-3" class="">City</label> 
+                    <input type="text" class="form-control" id="City" placeholder="Enter City" name="City">
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="field-3" class="">State</label> 
+                    <input type="text" class="form-control" id="State" placeholder="Enter State" name="State"> 
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="col-md-6">
+                       
+                    <label for="field-3" class="">Pincode</label> 
+                   <input type="text" class="form-control" id="Pincode" placeholder="Enter Pincode" name="Pincode">
+                 
+                  </div>
+                  <div class="col-md-6">
+                    <label for="field-3" class="">Country</label> 
+                    <input type="text" class="form-control" id="country" placeholder="Enter Country" name="country">
+                  </div>
+                </div>
+
+
+
+
+              </div>
+            </div>
+          </div>
+<!-- ---------------------------------------Genral settting Below----------------------------------------------------- -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse4"><span> <img src="icons/Settings.png" width="30px" alt="" /></span>&nbsp;&nbsp;&nbsp;Genral Settings<img class="pull-right pt-3 mr-5 icon-right-icon"src="icons/right.png"alt="" /></a>
+    </h4>
+   
+  </div>
+ 
+  <div id="collapse4" class="panel-collapse collapse">
+    <div class="panel-body" style="background-color: #f9f2f3;border-radius: 5px; margin-left:16px; margin-right:16px;margin-top: 1px;"> 
+      
+      <div class="row">
+        <div class="col-md-4">
+             <div class="form-group"> 
+               <div class="col-sm-offset-0 ">
+                           <div class="icheckbox_minimal" style="position: relative;">
+                             <input tabindex="5" type="checkbox" class="icheck" id="minimal-checkbox-1" style="position: absolute; opacity: 0;">
+                                 <ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px;
+                                       padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+                                 </ins>
+                           </div> 
+                           <div class="checkbox checkbox-replace checked">
+                             <input type="checkbox" id="chk-31" checked>
+                             <label>Is Management Contract</label>
+                           </div><br/>
+                           <div class="checkbox checkbox-replace checked">
+                             <input type="checkbox" id="chk-32" checked>
+                             <label>Waitlist Automation</label>
+                           </div><br/>
+               </div>
+             </div>                  
+        </div>
+
+        <div class="col-md-4">
+               <div class="form-group"> 
+                        <div class="col-sm-offset-0 "> 
+                             <div class="checkbox checkbox-replace checked">
+                               <input type="checkbox" id="chk-33" checked>
+                               <label>Is Tax 1 Applicable for resort</label>
+                             </div><br/>
+                             <div class="checkbox checkbox-replace checked">
+                               <input type="checkbox" id="chk-34" checked>
+                               <label>Is Tax2 Applicable for resort</label>
+                             </div><br/>
+                        </div>
+                </div>                     
+        </div>
+        <div class="col-md-4">
+               <div class="form-group"> 
+                        <div class="col-sm-offset-0 "> 
+                             <div class="checkbox checkbox-replace checked">
+                               <input type="checkbox" id="chk-35" checked>
+                               <label>Enhancement Tax 1 Applicable</label>
+                             </div><br/>
+                             <div class="checkbox checkbox-replace checked">
+                               <input type="checkbox" id="chk-36" checked>
+                               <label>Enhancement Tax 2 Applicable</label>
+                             </div><br/>
+                        </div>
+                </div>                     
+        </div>
+</div>
+      <div class="row">
+        <div class="col-md-4">
+             <div class="form-group"> 
+               <div class="col-sm-offset-0 ">
+                           <div class="icheckbox_minimal" style="position: relative;">
+                             <input tabindex="5" type="checkbox" class="icheck" id="minimal-checkbox-1" style="position: absolute; opacity: 0;">
+                                 <ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px;
+                                       padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+                                 </ins>
+                           </div> 
+                           <div class="checkbox checkbox-replace checked">
+                             <input type="checkbox" id="chk-31" checked>
+                             <label>Guest Fee Tax 1 Applicable</label>
+                           </div><br/>
+                           <div class="checkbox checkbox-replace checked">
+                             <input type="checkbox" id="chk-32" checked>
+                             <label>Guest Fee Tax 2 Applicable</label>
+                           </div><br/>
+               </div>
+             </div>                  
+        </div>
+
+        <div class="col-md-4">
+               <div class="form-group"> 
+                        <div class="col-sm-offset-0 "> 
+                             <div class="checkbox checkbox-replace checked">
+                               <input type="checkbox" id="chk-33" checked>
+                               <label>Utility Fee Tax 1 Applicable</label>
+                             </div><br/>
+                             <div class="checkbox checkbox-replace checked">
+                               <input type="checkbox" id="chk-34" checked>
+                               <label>Utility Fee Tax 2 Applicable</label>
+                             </div><br/>
+                         </div>
+                 </div>                     
+          </div>
+        <div class="col-md-4">
+               <div class="form-group"> 
+                        <div class="col-sm-offset-0 "> 
+                             <div class="checkbox checkbox-replace checked">
+                               <input type="checkbox" id="chk-35" checked>
+                               <label>Exchange Fee Tax 1 Applicable</label>
+                             </div><br/>
+                             <div class="checkbox checkbox-replace checked">
+                               <input type="checkbox" id="chk-36" checked>
+                               <label>Exchange Fee Tax 2 Applicable</label>
+                             </div><br/>
+                        </div>
+                   </div>                     
+             </div>
+         </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <label for="field-3" class="">Reservation Notes</label> 
+          <textarea class="form-control autogrow" name="about" id="about" data-validate="minlength[10]" rows="5" placeholder="Reservation Notes..." aria-invalid="false" style="overflow: hidden; overflow-wrap: break-word; resize: horizontal; height: 99px;"></textarea>   
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <label for="field-3" class="">Resort CV alias Name</label> 
+          <input type="text" class="form-control" id="aliasName" placeholder="Enter Resort CV Alias Name" name="City">
+        </div>
+
+        <div class="col-md-4">
+          <label for="field-3" class="">Additional Tax 1  Name</label> 
+          <input type="text" class="form-control" id="AdditionalTax1Name" placeholder="Enter Additional Tax 1  Name" name="State"> 
+        </div>
+
+        <div class="col-md-4">
+          <label for="field-3" class="">Additional Tax 2  Name</label> 
+          <input type="text" class="form-control" id="State" placeholder="Enter Additional Tax 2  Name" name="State"> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <label for="field-3" class="">Resort Schema</label> 
+          <textarea class="form-control autogrow" name="about" id="about" data-validate="minlength[10]" rows="5" placeholder="Reservation Notes..." aria-invalid="false" style="overflow: hidden; overflow-wrap: break-word; resize: horizontal; height: 99px;"></textarea>   
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-4">
+          <label for="field-3" class="">Additional Tax 1 %</label> 
+         <input type="number"min="0" class="form-control" id="AdditionalTax1" placeholder="Enter Additional Tax 1" name="Pincode">
+        </div>
+        <div class="col-md-4">
+          <label for="field-3" class="">Additional Tax 2 %</label> 
+          <input type="number" min="0"class="form-control" id="AdditionalTax2" placeholder="Enter Additional Tax 2" name="AdditionalTax2">
+        </div>
+        <div class="col-md-4">
+          <label for="field-3" class="">Guest Fee CGST</label> 
+          <input type="number" min="0"class="form-control" id="GuestFeeCGST" placeholder="Enter Guest Fee CGST" name="GuestFeeCGST">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <label for="field-3" class="">Guest Fee SGST</label> 
+         <input type="number" min="0" class="form-control" id="GuestFeeSGST" placeholder="Enter Guest Fee SGST" name="GuestFeeSGST">
+        </div>
+        <div class="col-md-4">
+          <label for="field-3" class="">Guest Fee IGST</label> 
+          <input type="number" min="0" class="form-control" id="GuestFeeIGST" placeholder="Enter Guest Fee IGST" name="GuestFeeIGST">
+        </div>
+        <div class="col-md-4">
+          <label for="field-3" class="">Utility Fee CGST</label> 
+          <input type="number" min="0" class="form-control" id="UtilityFeeCGST" placeholder="Enter Utility Fee CGST" name="UtilityFeeCGST">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <label for="field-3" class="">Utility Fee SGST</label> 
+         <input type="number" min="0" class="form-control" id="UtilityFeeSGST" placeholder="Enter Pincode" name="UtilityFeeSGST">
+        </div>
+        <div class="col-md-4">
+          <label for="field-3" class="">Utility Fee IGST</label> 
+          <input type="number" min="0" class="form-control" id="UtilityFeeIGST" placeholder="Enter Utility Fee IGST" name="UtilityFeeIGST">
+        </div>
+        <div class="col-md-4">
+          <label for="field-3" class="">Exchange Fee CGST</label> 
+          <input type="number" min="0" class="form-control" id="ExchangeFeeCGST" placeholder="Enter Exchange Fee CGST" name="ExchangeFeeCGST">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <label for="field-3" class="">Exchange Fee SGST</label> 
+         <input type="number" min="0" class="form-control" id="ExchangeFeeSGST" placeholder="Enter Exchange Fee SGST" name="ExchangeFeeSGST">
+        </div>
+        <div class="col-md-4">
+          <label for="field-3" class="">Exchange Fee IGST</label> 
+          <input type="number" min="0" class="form-control" id="ExchangeFeeIGST" placeholder="Enter Exchange Fee IGST" name="ExchangeFeeIGST">
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-12">
+              <label for="field-3" class="">Tax Applicable On</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 radio">
+              <input type="radio" class="optradio" name="optradio" checked>  <label for="optradio">Discounted</label>&nbsp;
+              <input type="radio" class="optradio" name="optradio" checked>  <label  for="optradio">Original Amount</label>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+              
+   
+
+
+
+
+    </div>
+  </div>
+</div>
+<!-- --------------------------------------Genral settting Up---------------------------------------------- -->
+<!-- --------------------------Assests Below------------------------------------------------------------ -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse5"><span> <img src="icons/asset.png" width="30px" alt="" /></span>&nbsp;&nbsp;&nbsp;Assets<img class="pull-right pt-3 mr-5 icon-right-icon"src="icons/right.png"alt="" /></a>
+    </h4>
+   
+  </div>
+ 
+  <div id="collapse5" class="panel-collapse collapse">
+    <div class="panel-body" style="background-color: #f9f2f3;border-radius: 5px; margin-left:16px; margin-right:16px;margin-top: 1px;"> 
+       
+           <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                      <label>Banner Image</label>
+                      <div class="input-group">
+                          <span class="input-group-btn">
+                              <span class="btn btn-default btn-file">
+                                  Browse… <input type="file" id="imgInp">
+                              </span>
+                          </span>
+                          <input type="text" class="form-control" readonly>
+                      </div>
+                      <img id='img-upload'/>
+                  </div>
+              </div>
+          </div>
+
+           <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                      <label for="field-3">Logo Image</label>
+                      <div class="input-group">
+                          <span class="input-group-btn">
+                              <span class="btn btn-default btn-file">
+                                  Browse… <input type="file" id="imgInp">
+                              </span>
+                          </span>
+                          <input type="text" class="form-control" readonly>
+                      </div>
+                      <img id='img-upload'/>
+                  </div>
+              </div>
+          </div>
+
+
+           <div class="row">
+                <div class="col-md-12">
+                          <label for="field-3">Gallary Image</label>
+                            <fieldset class="form-group">
+                              <span class="input-group-btn">
+                                <span class="btn btn-default btn-file">
+                                   <a href="javascript:void(0)" onclick="$('#pro-image').click()"> Browse…</a>
+                                </span>
+                             </span>
+                                <!-- <a href="javascript:void(0)" onclick="$('#pro-image').click()">Upload Image</a> -->
+                                <input type="file" id="pro-image" name="pro-image" style="display: none;" class="form-control" multiple>
+                            </fieldset>
+                            <div class="preview-images-zone">
+                                <div class="preview-image preview-show-1">
+                                    <div class="image-cancel" data-no="1">x</div>
+                                    <div class="image-zone"><img id="pro-img-1" src="assets/images/colorpicker/alpha.png"></div>
+                                    <div class="tools-edit-image"><a href="javascript:void(0)" data-no="1" class="btn btn-light btn-edit-image">edit</a></div>
+                                </div>
+                                <!-- <div class="preview-image preview-show-2">
+                                    <div class="image-cancel" data-no="2">x</div>
+                                    <div class="image-zone"><img id="pro-img-2" src="assets/images/colorpicker/alpha.png"></div>
+                                    <div class="tools-edit-image"><a href="javascript:void(0)" data-no="2" class="btn btn-light btn-edit-image">edit</a></div>
+                                </div>
+                                <div class="preview-image preview-show-3">
+                                    <div class="image-cancel" data-no="3">x</div>
+                                    <div class="image-zone"><img id="pro-img-3" src="assets/images/colorpicker/alpha.png"></div>
+                                    <div class="tools-edit-image"><a href="javascript:void(0)" data-no="3" class="btn btn-light btn-edit-image">edit</a></div>
+                                </div> -->
+                            </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <form action="#">
+                <label for="files">Dinner Images</label>
+                <input type="file" id="files" name="files" multiple><br><br>
+              </form>
+            </div>
+            
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-md-12">
+                  <label for="url">Branding flim URL</label>
+                </div>
+              </div>
+                <input type="url" name="BrandingflimURL" id="BrandingflimURL"  placeholder="Insert Branding flim URL here" style="width: 200px;"/><br>
+            </div>
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-md-12">
+                  <label for="url">Google Map Embed URL</label>
+                </div>
+              </div>
+                <input type="url" name="GoogleMapembedlink" id="GoogleMapembedURL"  placeholder="Insert Google Map embed URL here" style="width: 200px;"/><br>
+            </div>
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-md-12">
+                  <label for="url">Get Direction URL</label>
+                </div>
+              </div>
+                <input type="url" name="GetDirectionLink" id="GetDirectionLink"  placeholder="Insert Get Direction  URL here" style="width: 200px;"/><br>
+            </div>
+           
+          </div>
+
+
+          <div class="row">
+            <div class="col-md-4">
+              <form action="#">
+                <label for="files">Social Share Image</label>
+                <input type="file" id="files" name="files" multiple><br><br>
+              </form>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <label for="field-3" class="">Social Share FB</label> 
+              <textarea class="form-control autogrow" name="about" id="about" data-validate="minlength[10]" rows="5"
+              placeholder="Enter Information" aria-invalid="false" 
+              style="overflow: hidden; overflow-wrap: break-word; resize: horizontal; height: 99px; width: 100%;"></textarea>                                       
+            </div>
+           </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <label for="field-3" class="">Social Share Twitter</label> 
+              <textarea class="form-control autogrow" name="about" id="about" data-validate="minlength[10]" rows="5"
+              placeholder="Enter Information" aria-invalid="false" 
+              style="overflow: hidden; overflow-wrap: break-word; resize: horizontal; height: 99px; width: 100%;"></textarea>                                       
+            </div>
+           </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <label for="field-3" class="">Social Share Instagram</label> 
+              <textarea class="form-control autogrow" name="about" id="about" data-validate="minlength[10]" rows="5"
+              placeholder="Enter Information" aria-invalid="false" 
+              style="overflow: hidden; overflow-wrap: break-word; resize: horizontal; height: 99px; width: 100%;"></textarea>                                       
+            </div>
+           </div>
+         
+
+
+
+    </div>
+  </div>
+</div>
+<!-- --------------------------------------------------------------Assests Up------------------------------------ -->
+<!-- ---------------------------------Usefull Information Below--------------------------------------------- -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse6"><span> <img src="icons/information.png" width="30px" alt="" /></span>&nbsp;&nbsp;&nbsp;Useful Information<img class="pull-right pt-3 mr-5 icon-right-icon"src="icons/right.png"alt="" /></a>
+    </h4>
+   
+  </div>
+ 
+  <div id="collapse6" class="panel-collapse collapse">
+    <div class="panel-body" style="background-color: #f9f2f3;border-radius: 5px; margin-left:16px; margin-right:16px;margin-top: 1px;"> 
+       
+      <div class="row">
+        <div class="col-md-4">  
+          <div class="row">
+            <div class="col-md-12">
+              <label for="field-3" class="">Nearby Airport</label> 
+              <select  multiple class="chosen-selects"style="width: 100%;">
+                <option value=""></option>
+                <option>Resort</option>
+                <option>Booking</option>
+              </select>
+            </div>
+          </div>     
+           <div class="row">
+             <div class="col-md-12">
+              <label for="field-3" class="">Nearby Airport Distance</label> 
+              <input type="number" min="0" class="form-control" id="NearbyAirportDistance" placeholder="Enter Nearby Airport Distance" name="ExchangeFeeCGST">
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-md-12">
+              <label for="field-3" class="">Nearby Airport Description</label> 
+              <input type="number" min="0" class="form-control" id="NearbyAirportDistance" placeholder="Enter Nearby Airport Distance" name="ExchangeFeeCGST">
+             </div>
+           </div>
+        </div>
+
+       <div class="col-md-4">  
+          <div class="row">
+            <div class="col-md-12">
+              <label for="field-3" class="">Nearby BusStand </label> 
+              <select  multiple class="chosen-selects"style="width: 100%;">
+                <option value=""></option>
+                <option>Resort</option>
+                <option>Booking</option>
+              </select>
+            </div>
+          </div>     
+           <div class="row">
+             <div class="col-md-12">
+              <label for="field-3" class="">Nearby Bus Stand Distance</label> 
+              <input type="number" min="0" class="form-control" id="NearbyAirportDistance" placeholder="Nearby Bus Stand Distance" name="ExchangeFeeCGST">
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-md-12">
+              <label for="field-3" class="">Nearby Bus Stand Description</label> 
+              <input type="number" min="0" class="form-control" id="NearbyAirportDistance" placeholder="Nearby Bus Stand Description" name="ExchangeFeeCGST">
+             </div>
+           </div>
+        </div>
+        <div class="col-md-4">  
+          <div class="row">
+            <div class="col-md-12">
+              <label for="field-3" class="">Nearby Railway Station</label> 
+              <select  multiple class="chosen-selects"style="width: 100%;">
+                <option value=""></option>
+                <option>Resort</option>
+                <option>Booking</option>
+              </select>
+            </div>
+          </div>     
+           <div class="row">
+             <div class="col-md-12">
+              <label for="field-3" class="">Nearby Railway Station Distance</label> 
+              <input type="number" min="0" class="form-control" id="NearbyAirportDistance" placeholder="Enter Nearby Airport Distance" name="ExchangeFeeCGST">
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-md-12">
+              <label for="field-3" class="">Nearby Railway Station Description</label> 
+              <input type="number" min="0" class="form-control" id="NearbyAirportDistance" placeholder="Enter Nearby Airport Distance" name="ExchangeFeeCGST">
+             </div>
+           </div>
+        </div>
+      </div>  
+
+           <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                      <label for="field-3">Logo Image</label>
+                      <div class="input-group">
+                          <span class="input-group-btn">
+                              <span class="btn btn-default btn-file">
+                                  Browse… <input type="file" id="imgInp">
+                              </span>
+                          </span>
+                          <input type="text" class="form-control" readonly>
+                      </div>
+                      <img id='img-upload'/>
+                  </div>
+              </div>
+          </div>
+
+
+           <div class="row">
+                <div class="col-md-12">
+                          <label for="field-3">Galary Image</label>
+                            <fieldset class="form-group">
+                              <span class="input-group-btn">
+                                <span class="btn btn-default btn-file">
+                                   <a href="javascript:void(0)" onclick="$('#pro-image').click()"> Browse…</a>
+                                </span>
+                             </span>
+                                <!-- <a href="javascript:void(0)" onclick="$('#pro-image').click()">Upload Image</a> -->
+                                <input type="file" id="pro-image" name="pro-image" style="display: none;" class="form-control" multiple>
+                            </fieldset>
+                            <div class="preview-images-zone">
+                                <div class="preview-image preview-show-1">
+                                    <div class="image-cancel" data-no="1">x</div>
+                                    <div class="image-zone"><img id="pro-img-1" src="assets/images/colorpicker/alpha.png"></div>
+                                    <div class="tools-edit-image"><a href="javascript:void(0)" data-no="1" class="btn btn-light btn-edit-image">edit</a></div>
+                                </div>
+                                <!-- <div class="preview-image preview-show-2">
+                                    <div class="image-cancel" data-no="2">x</div>
+                                    <div class="image-zone"><img id="pro-img-2" src="assets/images/colorpicker/alpha.png"></div>
+                                    <div class="tools-edit-image"><a href="javascript:void(0)" data-no="2" class="btn btn-light btn-edit-image">edit</a></div>
+                                </div>
+                                <div class="preview-image preview-show-3">
+                                    <div class="image-cancel" data-no="3">x</div>
+                                    <div class="image-zone"><img id="pro-img-3" src="assets/images/colorpicker/alpha.png"></div>
+                                    <div class="tools-edit-image"><a href="javascript:void(0)" data-no="3" class="btn btn-light btn-edit-image">edit</a></div>
+                                </div> -->
+                            </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <form action="#">
+                <label for="files">Dinner Images</label>
+                <input type="file" id="files" name="files" multiple><br><br>
+              </form>
+            </div>
+            
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-md-12">
+                  <label for="url">Branding flim URL</label>
+                </div>
+              </div>
+                <input type="url" name="BrandingflimURL" id="BrandingflimURL"  placeholder="Insert Branding flim URL here" style="width: 200px;"/><br>
+            </div>
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-md-12">
+                  <label for="url">Google Map Embed URL</label>
+                </div>
+              </div>
+                <input type="url" name="GoogleMapembedlink" id="GoogleMapembedURL"  placeholder="Insert Google Map embed URL here" style="width: 200px;"/><br>
+            </div>
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-md-12">
+                  <label for="url">Get Direction URL</label>
+                </div>
+              </div>
+                <input type="url" name="GetDirectionLink" id="GetDirectionLink"  placeholder="Insert Get Direction  URL here" style="width: 200px;"/><br>
+            </div>
+           
+          </div>
+
+
+          <div class="row">
+            <div class="col-md-4">
+              <form action="#">
+                <label for="files">Social Share Image</label>
+                <input type="file" id="files" name="files" multiple><br><br>
+              </form>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <label for="field-3" class="">Social Share FB</label> 
+              <textarea class="form-control autogrow" name="about" id="about" data-validate="minlength[10]" rows="5"
+              placeholder="Enter Information" aria-invalid="false" 
+              style="overflow: hidden; overflow-wrap: break-word; resize: horizontal; height: 99px; width: 100%;"></textarea>                                       
+            </div>
+           </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <label for="field-3" class="">Social Share Twitter</label> 
+              <textarea class="form-control autogrow" name="about" id="about" data-validate="minlength[10]" rows="5"
+              placeholder="Enter Information" aria-invalid="false" 
+              style="overflow: hidden; overflow-wrap: break-word; resize: horizontal; height: 99px; width: 100%;"></textarea>                                       
+            </div>
+           </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <label for="field-3" class="">Social Share Instagram</label> 
+              <textarea class="form-control autogrow" name="about" id="about" data-validate="minlength[10]" rows="5"
+              placeholder="Enter Information" aria-invalid="false" 
+              style="overflow: hidden; overflow-wrap: break-word; resize: horizontal; height: 99px; width: 100%;"></textarea>                                       
+            </div>
+           </div>
+         
+
+
+
+    </div>
+  </div>
+</div>
+
+<!-- ---------------------------------Usefull Information Above--------------------------------------------- -->
+<div class="panel panel-default">
+
+
+		 <div class="panel-heading"> 
+		 
+		 <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion-test" href="#ExperiencesResortMaster" aria-expanded="false" class="collapsed">
+
+
+
+ 
+ <div class="row">
+ <div class="col-md-3 col-sm-6">  <img src="icons/exp.png" width="30px" alt="" />&nbsp;&nbsp;&nbsp;&nbsp;     Experiences  </div> 
+<div class="col-md-8 col-sm-6">  </div>
+ <div class="col-md-1 col-sm-6">   <img src="icons/right.png" width="12px" alt="" /></div> </div>
+ 
+ 
+</a> </h4> </div> <div id="ExperiencesResortMaster" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;"> 
+<div  style="padding: 0px;!important"class="panel-body">
+
+
+
+<div class="col-md-12"> <div class="panel panel-primary" style="background-color: #f0f0f1;" data-collapsed="0">
+ <div style="background-color: #f9f2f3;" class="panel-heading"> <div class="panel-title">
+
+</div>  </div> <div class="panel-body"   > <div class="row"> 
+
+<div class="col-md-2"> 
+<button type="button" class="btn btn-blue disabled">Experience1</button>
+</div>
+<div class="col-md-2"> 
+<button type="button" class="btn btn-blue disabled">Experience2</button>
+</div>
+<div class="col-md-2"> 
+<button type="button" class="btn btn-blue disabled">Experience3</button>
+</div>
+<div class="col-md-2"> 
+<button type="button" class="btn btn-blue disabled">Experience4</button>
+</div>
+<br/><br/>
+<div class="col-md-12"> 
+<div class="input-group"> <input type="text" class="form-control input-lg" name="search" placeholder="Search for something..."> <div class="input-group-btn"> <button type="submit" class="btn btn-lg btn-primary btn-icon">
+Search 
+<i class="entypo-search"></i> </button> </div> </div>
+</div>
+<div class="col-md-6"> 
+
+  <div class="form-group"> <div class="col-sm-offset-0 col-sm-5">
+ 
+ <div class="icheckbox_minimal" style="position: relative;">
+<input tabindex="5" type="checkbox" class="icheck" id="minimal-checkbox-1" style="position: absolute; opacity: 0;">
+<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px;
+ padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+</ins>
+</div> <br/>
+	<div class="checkbox checkbox-replace checked neon-cb-replacement">
+											<label class="cb-wrapper"><input type="checkbox" id="chk-1" checked=""><div class="checked"></div></label>
+											<label>Experience1</label>
+										</div><br/>
+	<div class="checkbox checkbox-replace checked neon-cb-replacement">
+											<label class="cb-wrapper"><input type="checkbox" id="chk-1" checked=""><div class="checked"></div></label>
+											<label>Experience2</label>
+										</div>
+
+</div></div></div> <br/>
+<div class="col-md-6"> 
+
+  <div class="form-group"> <div class="col-sm-offset-0 col-sm-5">
+ 
+ <div class="icheckbox_minimal" style="position: relative;">
+<input tabindex="5" type="checkbox" class="icheck" id="minimal-checkbox-1" style="position: absolute; opacity: 0;">
+<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px;
+ padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+</ins>
+</div> <br/>
+	<div class="checkbox checkbox-replace checked neon-cb-replacement">
+											<label class="cb-wrapper"><input type="checkbox" id="chk-1" checked=""><div class="checked"></div></label>
+											<label>Experience3</label>
+										</div><br/>
+	<div class="checkbox checkbox-replace checked neon-cb-replacement">
+											<label class="cb-wrapper"><input type="checkbox" id="chk-1" checked=""><div class="checked"></div></label>
+											<label>Experience4</label>
+										</div>
+
+</div></div></div>
+ 
+ </div> </div> </div> </div>
+
+
+
+
+</div> </div> </div>
+<div class="panel panel-default">
+		 <div class="panel-heading"> 		 
+		 <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion-test" href="#CertificatesOwn" aria-expanded="false" class="collapsed"> 
+ <div class="row">
+ <div class="col-md-6 col-sm-6">  <img src="icons/Cer.png" width="30px" alt="" />&nbsp;&nbsp;&nbsp;&nbsp;     Certificates Own  </div> 
+<div class="col-md-5 col-sm-6">  </div>
+ <div class="col-md-1 col-sm-6">   <img src="icons/right.png" width="12px" alt="" /></div> </div> 
+</a> </h4> </div> <div id="CertificatesOwn" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;"> 
+<div  style="padding: 0px;!important"class="panel-body">
+<div class="col-md-12"> <div class="panel panel-primary" style="background-color: #f0f0f1;" data-collapsed="0">
+ <div style="background-color: #f9f2f3;" class="panel-heading"> <div class="panel-title">
+
+</div>  </div> <div class="panel-body"   > <div class="row">   
+
+<div class="col-md-12"> <div class="panel panel-primary" style="background-color: #f0f0f1;" data-collapsed="0">
+ <div style="background-color: #f9f2f3;" class="panel-heading"> <div class="panel-title">
+
+</div>  </div> <div class="panel-body"   > <div class="row"> 
+
+<div class="col-md-2"> 
+<button type="button" class="btn btn-blue disabled">CertificatesOwn1</button>
+</div>
+<div class="col-md-2"> 
+<button type="button" class="btn btn-blue disabled">CertificatesOwn2</button>
+</div>
+<div class="col-md-2"> 
+<button type="button" class="btn btn-blue disabled">CertificatesOwn3</button>
+</div>
+<div class="col-md-2"> 
+<button type="button" class="btn btn-blue disabled">CertificatesOwn4</button>
+</div>
+<br/><br/>
+<div class="col-md-12"> 
+<div class="input-group"> <input type="text" class="form-control input-lg" name="search" placeholder="Search for something..."> <div class="input-group-btn"> <button type="submit" class="btn btn-lg btn-primary btn-icon">
+Search 
+<i class="entypo-search"></i> </button> </div> </div>
+</div>
+<div class="col-md-6"> 
+
+  <div class="form-group"> <div class="col-sm-offset-0 col-sm-6">
+ 
+ <div class="icheckbox_minimal" style="position: relative;">
+<input tabindex="5" type="checkbox" class="icheck" id="minimal-checkbox-1" style="position: absolute; opacity: 0;">
+<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px;
+ padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+</ins>
+</div> <br/>
+	<div class="checkbox checkbox-replace checked neon-cb-replacement">
+											<label class="cb-wrapper"><input type="checkbox" id="chk-1" checked=""><div class="checked"></div></label>
+											<label>CertificatesOwn1</label>
+										</div><br/>
+	<div class="checkbox checkbox-replace checked neon-cb-replacement">
+											<label class="cb-wrapper"><input type="checkbox" id="chk-1" checked=""><div class="checked"></div></label>
+											<label>CertificatesOwn2</label>
+										</div>
+
+</div></div></div> <br/>
+<div class="col-md-6"> 
+
+  <div class="form-group"> <div class="col-sm-offset-0 col-sm-6">
+ 
+ <div class="icheckbox_minimal" style="position: relative;">
+<input tabindex="5" type="checkbox" class="icheck" id="minimal-checkbox-1" style="position: absolute; opacity: 0;">
+<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px;
+ padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+</ins>
+</div> <br/>
+	<div class="checkbox checkbox-replace checked neon-cb-replacement">
+											<label class="cb-wrapper"><input type="checkbox" id="chk-1" checked=""><div class="checked"></div></label>
+											<label>CertificatesOwn3</label>
+										</div><br/>
+	<div class="checkbox checkbox-replace checked neon-cb-replacement">
+											<label class="cb-wrapper"><input type="checkbox" id="chk-1" checked=""><div class="checked"></div></label>
+											<label>CertificatesOwn4</label>
+										</div>
+
+</div></div></div>
+ 
+ </div> </div> </div> </div>
+ 
+ </div> </div> </div> </div>
+</div> </div> </div>
+
+<div class="panel panel-default">
+		 <div class="panel-heading"> 		 
+		 <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion-test" href="#Destinationresort" aria-expanded="false" class="collapsed"> 
+ <div class="row">
+ <div class="col-md-6 col-sm-6">  <img src="icons/Des.png" width="30px" alt="" />&nbsp;&nbsp;&nbsp;&nbsp;     Destination  </div> 
+<div class="col-md-5 col-sm-6">  </div>
+ <div class="col-md-1 col-sm-6">   <img src="icons/right.png" width="12px" alt="" /></div> </div> 
+</a> </h4> </div> <div id="Destinationresort" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;"> 
+<div  style="padding: 0px;!important"class="panel-body">
+<div class="col-md-12"> <div class="panel panel-primary" style="background-color: #f0f0f1;" data-collapsed="0">
+ <div style="background-color: #f9f2f3;" class="panel-heading"> <div class="panel-title">
+
+</div>  </div> <div class="panel-body"   > <div class="row">   
+
+<div class="col-md-12"> <div class="panel panel-primary" style="background-color: #f0f0f1;" data-collapsed="0">
+ <div style="background-color: #f9f2f3;" class="panel-heading"> <div class="panel-title">
+
+</div>  </div> <div class="panel-body"   > <div class="row"> 
+
+<div class="col-md-2"> 
+<button type="button" class="btn btn-blue disabled">Destination1</button>
+</div>
+<div class="col-md-2"> 
+<button type="button" class="btn btn-blue disabled">Destination2</button>
+</div>
+<div class="col-md-2"> 
+<button type="button" class="btn btn-blue disabled">Destination3</button>
+</div>
+<div class="col-md-2"> 
+<button type="button" class="btn btn-blue disabled">Destination4</button>
+</div>
+<br/><br/>
+<div class="col-md-12"> 
+<div class="input-group"> <input type="text" class="form-control input-lg" name="search" placeholder="Search for something..."> <div class="input-group-btn"> <button type="submit" class="btn btn-lg btn-primary btn-icon">
+Search 
+<i class="entypo-search"></i> </button> </div> </div>
+</div>
+<div class="col-md-6"> 
+
+  <div class="form-group"> <div class="col-sm-offset-0 col-sm-5">
+ 
+ <div class="icheckbox_minimal" style="position: relative;">
+<input tabindex="5" type="checkbox" class="icheck" id="minimal-checkbox-1" style="position: absolute; opacity: 0;">
+<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px;
+ padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+</ins>
+</div> <br/>
+	<div class="checkbox checkbox-replace checked neon-cb-replacement">
+											<label class="cb-wrapper"><input type="checkbox" id="chk-1" checked=""><div class="checked"></div></label>
+											<label>Destination1</label>
+										</div><br/>
+	<div class="checkbox checkbox-replace checked neon-cb-replacement">
+											<label class="cb-wrapper"><input type="checkbox" id="chk-1" checked=""><div class="checked"></div></label>
+											<label>Destination2</label>
+										</div>
+
+</div></div></div> <br/>
+<div class="col-md-6"> 
+
+  <div class="form-group"> <div class="col-sm-offset-0 col-sm-5">
+ 
+ <div class="icheckbox_minimal" style="position: relative;">
+<input tabindex="5" type="checkbox" class="icheck" id="minimal-checkbox-1" style="position: absolute; opacity: 0;">
+<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px;
+ padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+</ins>
+</div> <br/>
+	<div class="checkbox checkbox-replace checked neon-cb-replacement">
+											<label class="cb-wrapper"><input type="checkbox" id="chk-1" checked=""><div class="checked"></div></label>
+											<label>Destination3</label>
+										</div><br/>
+	<div class="checkbox checkbox-replace checked neon-cb-replacement">
+											<label class="cb-wrapper"><input type="checkbox" id="chk-1" checked=""><div class="checked"></div></label>
+											<label>Destination4</label>
+										</div>
+
+</div></div></div>
+ 
+ </div> </div> </div> </div>
+ 
+ </div> </div> </div> </div>
+</div> </div> </div>
+
+ <div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> 
+ 
+ 
+ <a data-toggle="collapse" data-parent="#accordion-test" href="#RoomType" class="collapsed" aria-expanded="false">
+ <div class="row">
+ <div class="col-md-3 col-sm-6">  <img src="icons/hotel.png" width="30px" alt="" />&nbsp;&nbsp;&nbsp;&nbsp;     Room Type </div> 
+<div class="col-md-8 col-sm-6">  </div>
+ <div class="col-md-1 col-sm-6">   <img src="icons/right.png" width="12px" alt="" /></div> </div>
+ 
+ 
+</a> </h4> </div>
+ <div id="RoomType" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+
+<div style="padding: 0px;!important" class="panel-body">
+
+
+</div>
+
+
+ </div> </div> 
+
+
+<div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> 
+<a data-toggle="collapse" data-parent="#accordion-test" href="#usefulinformation" class="collapsed" aria-expanded="false">
+ <div class="row">
+ <div class="col-md-6 col-sm-6">  <img src="icons/information.png" width="30px" alt="" />&nbsp;&nbsp;&nbsp;&nbsp;     Useful Information</div> 
+<div class="col-md-5 col-sm-6">  </div>
+ <div class="col-md-1 col-sm-6">   <img src="icons/right.png" width="12px" alt="" /></div> </div>
+ 
+ 
+</a> </h4> </div> 
+<div id="usefulinformation" class="panel-collapse collapse" aria-expanded="false"> <div style="padding: 0px;!important" class="panel-body">
+<div class="col-md-12"> <div class="panel panel-primary" style="background-color: #f0f0f1;" data-collapsed="0">
+ <div style="background-color: #f9f2f3;" class="panel-heading"> <div class="panel-title">
+
+</div>  </div> <div class="panel-body"> <div class="row"> 
+
+ <div class="col-md-2"> 
+  </div> <div class="clear"></div> <br>  
+ </div> </div> </div> </div>
+</div></div> </div>
+<div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> 
+<a data-toggle="collapse" data-parent="#accordion-test" href="#assets" class="collapsed" aria-expanded="false">
+<div class="row">
+ <div class="col-md-3 col-sm-6">  <img src="icons/asset.png" width="30px" alt="" />&nbsp;&nbsp;&nbsp;&nbsp;     Assets</div> 
+<div class="col-md-8 col-sm-6">  </div>
+ <div class="col-md-1 col-sm-6">   <img src="icons/right.png" width="12px" alt="" /></div> </div> 
+</a> </h4> </div> 
+<div id="assets" class="panel-collapse collapse" aria-expanded="false"> <div style="padding: 0px;!important" class="panel-body">
+<div class="col-md-12"> <div class="panel panel-primary" style="background-color: #f0f0f1;" data-collapsed="0">
+ <div style="background-color: #f9f2f3;" class="panel-heading"> <div class="panel-title">
+<h4><b></b></h4>
+</div>  </div> <div class="panel-body"> 
+<div class="row"> 
+  <div class="clear"></div> <br>
+  <div class="col-md-12"> 
+ <div class="form-group"> <label class="col-sm-3 control-label">Dinning Images</label> <div class="col-sm-5">
+ <div class="fileinput fileinput-new" data-provides="fileinput"><input type="hidden"> 
+ <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;" data-trigger="fileinput">
+ <img src="http://placehold.it/200x150" alt="..."> </div> 
+ <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 10px;"></div> 
+ <div> <span class="btn btn-white btn-file"> <span class="fileinput-new">Select image</span> 
+ <span class="fileinput-exists">Change</span> <input type="file" name="..." accept="image/*"> </span> 
+ <a href="#" class="btn btn-orange fileinput-exists" data-dismiss="fileinput">Remove</a> </div> </div> </div> </div></div>
+  <div class="col-md-7"></div> 
+ <div class="col-md-1"> 
+</div>
+ <div class="col-md-2"> 
+  </div> 
+ <div class="col-md-2"> 
+  </div> <div class="clear"></div> <br>  
+ </div> </div> </div> </div>
+</div> </div> </div>
+<div class="panel panel-default"> <div class="panel-heading"> <h4 class="panel-title"> 
+<a data-toggle="collapse" data-parent="#accordion-test" href="#generalsettings" class="collapsed" aria-expanded="false">
+<div class="row">
+ <div class="col-md-6 col-sm-6">  <img src="icons/Settings.png" width="30px" alt="" />&nbsp;&nbsp;&nbsp;&nbsp;     General Settings</div> 
+<div class="col-md-5 col-sm-6">  </div>
+ <div class="col-md-1 col-sm-6">   <img src="icons/right.png" width="12px" alt="" /></div> </div> 
+</a> </h4> </div> 
+<div id="generalsettings" class="panel-collapse collapse" aria-expanded="false"> <div style="padding: 0px;!important" class="panel-body">
+<div class="col-md-12"> <div class="panel panel-primary" style="background-color: #f0f0f1;" data-collapsed="0">
+ <div style="background-color: #f9f2f3;" class="panel-heading"> <div class="panel-title">
+</div>  </div> <div class="panel-body">
+ <div class="row"> 
+ 
+ <div class="col-md-2"> 
+  </div> <div class="clear"></div> <br> 
+ </div> </div> </div> </div>
+</div> </div> </div>
+ </div> 
+    </div> 
+</div> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+ </div>
+    </div> 
+	  <footer class="main">
+<div class="col-md-9">  </div>
+<div class="col-md-3">  &copy; 2020 <strong>Sterling Holidays</strong></div>
+      </footer>
+   <script src="assets/js/gsap/TweenMax.min.js" id="script-resource-1"></script>
+	<script src="assets/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js" id="script-resource-2"></script>
+	<script src="assets/js/bootstrap.js" id="script-resource-3"></script>
+	<script src="assets/js/joinable.js" id="script-resource-4"></script>
+	<script src="assets/js/resizeable.js" id="script-resource-5"></script>
+	<script src="assets/js/neon-api.js" id="script-resource-6"></script>
+	<script src="assets/js/bootstrap-switch.min.js" id="script-resource-8"></script>
+	<script src="assets/js/neon-chat.js" id="script-resource-9"></script>
+	<script src="assets/js/neon-custom.js" id="script-resource-10"></script>
+	<script src="assets/js/neon-demo.js" id="script-resource-11"></script>
+  <script src="assets/js/neon-skins.js" id="script-resource-12"></script>
+  <!-- <script src="assets/js/jquery-1.11.3.min.js"></script>
+  <script src="assets/choosen/chosen.jquery.min.js"></script>
+  <script src="assets/choosen/chosen.jquery.js"></script> -->
+  <script src="assets/choosen/docsupport/jquery-3.2.1.min.js" type="text/javascript"></script>
+  <script src="assets/choosen/chosen.jquery.js" type="text/javascript"></script>
+  <script src="assets/choosen/docsupport/prism.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/choosen/docsupport/init.js" type="text/javascript" charset="utf-8"></script>
+
+ 
+
+
+	<script>
+	function resortclick() {
+
+
+  var x = document.getElementById("closedivg");
+  
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+   
+  
+}
+</script>
+<script>
+  $(document).ready(function(){
+
+    $(".chosen-select").chosen(); 
+ 
+  });
+
+</script>
+
+<script>
+      $(document).ready(function(){
+
+        $(".chosen-select").chosen({no_results_text: "Oops, nothing found!"}); 
+     
+      });
+    
+   </script>
+    
+</body>
+</html>
